@@ -1,0 +1,44 @@
+# CGI for Visual Object Recognition Config
+# All parameters require a specific type of value
+
+# True or False
+scene_no_trees: True
+# True or False
+scene_no_rocks: False
+# Must be less than max rocks
+min_num_rocks: 3
+# Must be more than min rocks
+max_num_rocks: 5
+# Must be more than min trees
+min_num_trees: 2
+# Must be more than max trees
+max_num_trees: 4
+# Must be more than min subjects
+min_num_subjects: 6
+# Must be more than max subjects
+max_num_subjects: 9
+# Must be any of [ground_grass, ground_water]
+ground_type: ground_grass 
+# Number in range [0-3]
+grass_preset: 1
+# Must be any of [morning, noon, afternoon, evening, night]
+time_of_day: afternoon
+camera_distance: 10
+camera_height: 10
+# True or False
+random_rotate_camera: True
+# True or False
+random_rotate_HDRI: True
+# True or False
+random_ground_texture: True
+# True or False
+random_ground_type: True
+# True or False
+random_grass_texture: True
+# True or False
+random_time_of_day: True
+image_prefix: cgivor
+# Number of images to be generated
+step_count: 5
+# Starting number in the image's filename
+step_start: 0
