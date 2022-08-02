@@ -76,7 +76,7 @@ class CGIVOR_OT_init_scene(bpy.types.Operator):
 
   def append_object(self, file_path, name):
     bpy.ops.wm.append(
-      filename=os.path.join(file_path, '\\Object\\', name)
+      filename=os.path.join(file_path, 'Object', name)
     )
 
   def execute(self, context):
@@ -103,7 +103,7 @@ class CGIVOR_OT_init_scene(bpy.types.Operator):
     context.scene.camera = camera_obj
     base_col.objects.link(camera_obj)
  
-    file_path = os.path.join(bpy.utils.user_resource('SCRIPTS', path="addons"), "\\cgivor_addon\\assets\\")
+    file_path = os.path.join(bpy.utils.user_resource('SCRIPTS', path="addons"), "cgivor_addon", "assets")
     # Link into the assets blend file
     for obj in ["ground_grass", "ground_water"]:
       self.append_object(os.path.join(file_path + "environment.blend"), obj) 
