@@ -1,5 +1,9 @@
 import bpy
 import os
+
+bpy.ops.preferences.addon_enable(module="cgivor_addon")
+bpy.ops.preferences.addon_enable(module="cycles")
+
 # Get the containing folder of this file
 dir_path = os.path.dirname(os.path.realpath(__file__))
 # Load Config
