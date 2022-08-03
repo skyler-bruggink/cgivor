@@ -1,0 +1,23 @@
+{
+  "scene_no_trees": true,
+  "scene_no_rocks": false,
+  "max_num_rocks": 5,
+  "min_num_trees": 2,
+  "max_num_trees": 4,
+  "min_num_subjects": 6,
+  "max_num_subjects": 9,
+  "ground_type": "ground_grass", 
+  "grass_preset": 1,
+  "time_of_day": "afternoon",
+  "camera_distance": 10,
+  "camera_height": 10,
+  "random_rotate_camera": true,
+  "random_rotate_HDRI": true,
+  "random_ground_texture": true,
+  "random_ground_type": true,
+  "random_grass_texture": true,
+  "random_time_of_day": true,
+  "image_prefix": "cgivor",
+  "step_count": 5,
+  "step_start": 0
+}
