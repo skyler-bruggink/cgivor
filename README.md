@@ -7,7 +7,7 @@ sudo apt-get update
 sudo apt-get install git git-lfs
 # Install blender
 sudo snap install blender --channel=2.9/stable --classic
-sudo apt-get install -y libxxf86vm libxi6 libgconf-2-4 libxfixes-dev libgl-dev libxrender-dev
+sudo apt-get install -y libxxf86vm-dev libxi6 libgconf-2-4 libxfixes-dev libgl-dev libxrender-dev
 wget https://bootstrap.pypa.io/get-pip.py -P ~
 /snap/blender/65/2.91/python/bin/python3.7m ~/get-pip.py
 export PATH=$PATH:~/.local/bin
