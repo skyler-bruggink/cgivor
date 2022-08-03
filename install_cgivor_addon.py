@@ -7,7 +7,7 @@ addon_file = os.path.join(dir_path, "cgivor_addon.zip")
 bpy.ops.preferences.addon_install(overwrite=True, filepath=addon_file)
 bpy.ops.preferences.addon_enable(module="cgivor_addon")
 
-preferences = bpy.context.user_preferences
+preferences = bpy.context.preferences
 cycles_preferences = preferences.addons['cycles'].preferences
 cuda_devices, opencl_devices = cycles_preferences.get_devices()
 
