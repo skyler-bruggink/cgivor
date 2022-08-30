@@ -1,4 +1,5 @@
 {
+  "white_noise_only": false,
   "scene_no_trees": true,
   "scene_no_rocks": false,
   "max_num_rocks": 5,

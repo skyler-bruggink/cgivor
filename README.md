@@ -25,6 +25,8 @@ Edit the provided `cgivor.json` file and run blender with `cgivor.py` to use the
 ```yaml
 # CGI for Visual Object Recognition Config
 # True or False
+white_noise_only: False
+# True or False
 scene_no_trees: true
 # True or False
 scene_no_rocks: false
@@ -67,8 +69,18 @@ step_count: 5
 step_start: 0
 ```
 
-## Run the generator
+## Run the generator in headless mode
 After editing the config file, use the following command in the cgivor directory:
 ```bash
 blender -b -P cgivor.py
 ```
+
+## Installation (Windows)
+1. Download and install the latest version of [Blender for Windows](https://www.blender.org/download/).
+2. Download or clone the cgivor repository to a local directory.
+3. Open blender and navigate to `Edit > Preferences > Add-ons`, then select `Install`. In a file dialog select the `cgivor_addon.zip` to install the add-on.
+4. Click the checkbox to enable the addon (named `3D View: CGI for Visual Object Recognition`).
+5. Open the configuration panel in the 3D viewport under the CGIVOR tab.
+
+### Note 
+Make sure to press `Initialize Scene` before you run the generator.
